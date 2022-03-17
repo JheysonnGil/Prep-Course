@@ -1,0 +1,20 @@
+Variables
+Son como una expecie de objetos a los cuales les entregamos valores o letras, nos sirven para abarcar cierta informacion dentro de una sola cosa mas facil de usar
+
+Strings
+Es contenido de tipo texto unicamente, es decir, el contenido tipo string esta compuesto generalmente de letras, pero tambien pueden tener numeros siempre y cuando esten dentro de comillas
+
+Funciones
+Son operaciones o acciones que nos permiten realizar un pequeño conjunto de acciones para que estas sean agrupadas dentro de una sola funcion, ayuda mucho a evitar el duplicado innecesario de lineas de codigo
+
+Argumentos
+Son las caracteristicas que deben llegar una funcion, como decir que al momento de hacerse algo, se debe tener en cuenta dichas caracteristicas
+
+Return
+Nos permite devolver el valor resultanto a la variable inicial pero unicamente dentro de la funcion
+
+Declaraciones
+Son acciones que se le asigna al lector de codigo o programa para realizar y esperar instrucicones luego de realizarlas
+
+Valores Booleanos
+Son respuestas directas sobre algo que pueden ser unicamente VERDADERO o FALSO
