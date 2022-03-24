@@ -1,0 +1,24 @@
+Objetos:
+    Son arreglo de datos pero que sus argumentos o propiedades pueden ser guardados de manera mas concreta
+    y sus tipos de datos son mas flexibles, es decir, nos permite guardar propiedades de diversos tipos sin
+    tener ningun problema, por ejemplo: podemos guardar propiedades de tipo string, numerico, booleano e incluso
+    funciones en el objeto.
+
+Propiedades:
+    Son similares de las propiedades dentro de un arreglo, pero con mayor facilidad tanto de nombrarlos, como de
+    llamarlos, es decir, nos permiten asignar la manera en la que los podemos utilizar al momento de llamarlos.
+
+Métodos:
+    Son funciones que se pueden situar dentro de un objeto para ser usados de manera sencilla, se les llama metodo
+    porque son formas de llamar ejecuciones (funciones) directamente a la propiedad de un objeto.
+	
+Bucle `for…in`:
+	Es un metodo de bucle donde solo se tendran en cuenta las propiedades dentro del objeto que asignamos
+
+Notación de puntos vs notación de corchetes:
+    
+    DOT NOTATION: Permite llamar propiedades de un objeto de manera mas sencilla, pero no permite ciertos casos
+    como hacer llamado de propiedad por medio de una variable.
+
+    BRACKET NOTATION: A pesar de ser la manera basica y compleja de llamar propiedades de un objeto, tambien es la
+    mas completa ya que permite utilizar variables para llamar estas propiedades.
