@@ -1,0 +1,2 @@
+Los Arrays son conjuntos de objetos o argumentos, que estan ubicados desde 0 hasta adelante. Los arrays tambien pueden ser tomados como un solo obejto general
+o tomados por los objetos internos que posee.
