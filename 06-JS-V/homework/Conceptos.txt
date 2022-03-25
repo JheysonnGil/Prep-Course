@@ -1,0 +1,7 @@
+Prototipo:
+Es un objeto adyacente al objeto en sí, es decir, es un objeto que pertenece al primer objeto pero la unica manera de acceder a el
+es utilizando la keyword '__proto__' o '.protitype'.
+
+Constructores:
+Son funciones que permiten la ceacion directa de objetos solamente utilizando los argumentos que deseamos que esten en ese nuevo
+objeto
