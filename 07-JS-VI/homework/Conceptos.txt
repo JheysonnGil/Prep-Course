@@ -1,0 +1,2 @@
+Funciones Callback:
+Nos ayuda a realizar funciones que invocan otras funciones, nos ayudan a separar distintas funciones para luego invocarlas y hacer mas sencillo el trabajo
