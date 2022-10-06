@@ -6,20 +6,17 @@ function devolverPrimerElemento(array) {
   return array[0];
 }
 
-
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
   return array[array.length - 1];
 }
 
-
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
   return array.length;
 }
-
 
 function incrementarPorUno(array) {
   // "array" debe ser una matriz de enteros (int/integers)
@@ -32,7 +29,6 @@ function incrementarPorUno(array) {
   return array;
 }
 
-
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
@@ -40,7 +36,6 @@ function agregarItemAlFinalDelArray(array, elemento) {
   array.push(elemento);
   return array;
 }
-
 
 function agregarItemAlComienzoDelArray(array, elemento) {
   // Añade el "elemento" al comienzo del array
@@ -51,24 +46,22 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   return array;
 }
 
-
 function dePalabrasAFrase(palabras) {
   // "palabras" es un array de strings/cadenas
   // Devuelve un string donde todas las palabras estén concatenadas
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  var cadena = '';
-  for (var i = 0; i < palabras.length; i++) {
-    if (cadena.length == 0) {
-      cadena = cadena + String(palabras[i]);
+  let stri = "";
+  for (let i = 0; i < palabras.length; i++) {
+    if (stri.length == 0) {
+      stri = String(palabras[i]);
     } else {
-      cadena = cadena + ' ' + String(palabras[i]);
+      stri = stri + " " + String(palabras[i]);
     }
   }
-  return cadena;
+  return stri;
 }
-
 
 function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
@@ -81,7 +74,6 @@ function arrayContiene(array, elemento) {
     return false;
   }
 }
-
 
 function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
@@ -97,7 +89,6 @@ function agregarNumeros(numeros) {
   }
   return sum;
 }
-
 
 function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
@@ -118,7 +109,6 @@ function promedioResultadosTest(resultadosTest) {
   return prom;
 }
 
-
 function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
@@ -134,7 +124,6 @@ function numeroMasGrande(numeros) {
   return mayor;
 }
 
-
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
@@ -144,7 +133,7 @@ function multiplicarArgumentos() {
   for (var i = 0; i < arguments.length; i++) {
     if (arguments.length > 0) {
       p = parseInt(p * arguments[i]);
-      q = p
+      q = p;
     } else {
       q = 0;
     }
@@ -152,8 +141,7 @@ function multiplicarArgumentos() {
   return q;
 }
 
-
-function cuentoElementos(arreglo){
+function cuentoElementos(arreglo) {
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
   var conta = 0;
@@ -162,80 +150,70 @@ function cuentoElementos(arreglo){
       conta = conta + 1;
     }
   }
-return conta;
+  return conta;
 }
 
-
 function diaDeLaSemana(numeroDeDia) {
-  //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
+  //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente.
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
-  //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
-  //Escribe tu código aquí   
+  //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario.
+  //Escribe tu código aquí
   var dia = 0;
   for (var i = 0; i < numeroDeDia; i++) {
     switch (true) {
       case numeroDeDia == 1 || numeroDeDia == 7:
-        dia = 'Es fin de semana';
+        dia = "Es fin de semana";
         break;
       default:
-        dia = 'Es dia Laboral';
+        dia = "Es dia Laboral";
         break;
     }
   }
-return dia;
-} 
-
+  return dia;
+}
 
 function empiezaConNueve(n) {
-  //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
+  //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí:
   var emp = String(n);
-  if (emp.startsWith('9')) {
+  if (emp.startsWith("9")) {
     return true;
   } else {
     return false;
   }
 }
 
-
 function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
-  //Escribe tu código aquí  
-  var check = '';
-  for (var i = 0; i < arreglo.length; i++) {
-    if (check == '') {
-      check = arreglo[i];
-    } else if (check == arreglo[i]) {
-      check = arreglo[i];
-    } else {
+  //Escribe tu código aquí
+  for (let i = 1; i < arreglo.length; i++) {
+    if (arreglo[0] !== arreglo[i]) {
       return false;
     }
   }
-return true;
-} 
-
+  return true;
+}
 
 function mesesDelAño(array) {
-  //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de 
+  //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-  var mesEnero = array.indexOf('Enero');
-  var mesMarzo = array.indexOf('Marzo');
-  var mesNovie = array.indexOf('Noviembre');
+  var mesEnero = array.indexOf("Enero");
+  var mesMarzo = array.indexOf("Marzo");
+  var mesNovie = array.indexOf("Noviembre");
   var array2 = [];
   if (mesEnero !== -1 && mesMarzo !== -1 && mesNovie !== -1) {
-    array2.push('Marzo');
-    array2.push('Noviembre');
-    array2.push('Enero');
+    array2.push("Marzo");
+    array2.push("Noviembre");
+    array2.push("Enero");
     return array2;
   } else {
-    return 'No se encontraron los meses pedidos';
+    return "No se encontraron los meses pedidos";
   }
 }
-
 
 function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
@@ -247,39 +225,46 @@ function mayorACien(array) {
       array2.push(array[i]);
     }
   }
-return array2;
+  return array2;
 }
-
 
 function breakStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
-  //Guardar cada nuevo valor en un array. 
+  //Guardar cada nuevo valor en un array.
   //Devolver el array
-  //Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución y 
+  //Si en algún momento el valor de la suma y la cantidad de iteraciones coinciden, debe interrumpirse la ejecución y
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
   var array2 = [];
   var cont = 0;
   var aum = 0;
+
+  let obj = { nombre: "Enero", nombre: "Febrero" };
+
+  for (let key in obj) {
+    if (key === "Enero") {
+      array2.push(key);
+    }
+  }
+
   for (var i = 1; i <= 10; i++) {
     switch (true) {
       case i !== cont:
-        aum = i * 2
+        aum = i * 2;
         cont = numero + aum;
         array2.push(cont);
         break;
       default:
-        return 'Se interrumpió la ejecución';
+        return "Se interrumpió la ejecución";
     }
   }
-return array2;
+  return array2;
 }
-
 
 function continueStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
-  //Guardar cada nuevo valor en un array.    
+  //Guardar cada nuevo valor en un array.
   //Devolver el array
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
@@ -294,15 +279,14 @@ function continueStatement(numero) {
         dism = -2;
         continue;
       default:
-        aum = i * 2
+        aum = i * 2;
         cont = aum + numero + dism;
         array2.push(cont);
         break;
     }
   }
-return array2;
+  return array2;
 }
-
 
 // No modificar nada debajo de esta línea
 // --------------------------------
@@ -327,5 +311,5 @@ module.exports = {
   mesesDelAño,
   mayorACien,
   breakStatement,
-  continueStatement
+  continueStatement,
 };
